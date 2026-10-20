@@ -20,8 +20,8 @@ export default class Queue<T> {
             this.tail = this.head = node;
         }
 
-        this.tail.next = node; // the item being inserted becomes the next item
-        this.tail = node; // now the tail has to be updated
+        this.tail.next = node; // the item being inserted becomes the next item (the current tail now points to next since it's a linked list)
+        this.tail = node; // now the tail of the list has to be updated to the last element
 
 }
     deque(): T | undefined {
