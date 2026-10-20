@@ -23,7 +23,7 @@ export default class Queue<T> {
         this.tail.next = node; // the item being inserted becomes the next item (the current tail now points to next since it's a linked list)
         this.tail = node; // now the tail of the list has to be updated to the last element
 
-}
+    }
     deque(): T | undefined {
         if (!this.head) {
             return undefined;
@@ -45,9 +45,9 @@ export default class Queue<T> {
 
         // 3. return the value 
         return head.value;
-}
+    }
     peek(): T | undefined {
         return this.head?.value;
 
-}
+    }
 }
