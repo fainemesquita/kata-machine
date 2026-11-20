@@ -1,13 +1,10 @@
 export default function compare(a: BinaryNode<number> | null, b: BinaryNode<number> | null): boolean {
 
-    if (a === null && b === null){ // this means we reached a point where we can't recurse any further 
+    if (a === null && b === null) { // this means we reached a point where we can't recurse any further 
         return true
     } 
-    if (a === null || b === null){
-        return false
-    }
-
-    if (a === null || b === null){
+    
+    if (a === null || b === null) {
         return false
     }
 
